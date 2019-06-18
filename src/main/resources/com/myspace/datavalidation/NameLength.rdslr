@@ -1,0 +1,13 @@
+package com.myspace.datavalidation;
+
+import java.lang.Number;
+
+rule "NameLength"
+	dialect "mvel"
+	when
+		There is an entity identified as $entity
+		- with name longer than 40 characters long
+	then
+		Log name of this rule
+		Flag with validation error message Name is greater than 40 characters
+end
