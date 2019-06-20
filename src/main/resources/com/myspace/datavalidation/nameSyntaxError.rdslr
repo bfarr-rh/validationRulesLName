@@ -9,5 +9,5 @@ rule "nameSyntaxError"
 		- with name not matching the regular expression ^([A-Z][a-z]+([-][A-Z][a-z]+)*)*
 	then
 		Log name of this rule
-		Flag with validation error message Name syntax error.
+		Flag with validation error message Last name only supports alphabetic and hyphen as special character, start with upper case
 end
